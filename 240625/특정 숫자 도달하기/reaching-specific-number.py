@@ -1,12 +1,12 @@
 arr = list(map(int, input().split()))
-n = len(arr)
-bound = 9
+bound = 10
 
-for i in range(n):
+for i in range(len(arr)):
     if arr[i] >= 250:
         bound = i
         break
 
-total = sum(arr[:bound])
+arr = arr[:bound]
+total = sum(arr)
 
-print(total, total / bound)
+print(total, total / len(arr))
