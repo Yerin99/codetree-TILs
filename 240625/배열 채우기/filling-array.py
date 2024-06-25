@@ -1,5 +1,5 @@
 arr = list(map(int, input().split()))
-bound = 9
+bound = 10
 
 if arr.count(0) != 0:
     bound = arr.index(0)
